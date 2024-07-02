@@ -16,9 +16,11 @@ Parameters
     -l: Show only listening ports
     -n: Show port numbers instead of names
 
-## 2. ss
+## 2. `ss`
 
 ss (socket statistics) is a tool that can replace netstat. It can provide detailed statistics about network connections.
+
+### Comando
 
 ```sh
 ss -tuln
@@ -31,9 +33,11 @@ Parameters
     -l: Show only listening ports
     -n: Show port numbers instead of names
 
-## 3. lsof
+## 3. `lsof`
 
 lsof (list open files) is a tool that lists information about open files, including network ports.
+
+### Comando 
 
 ```sh
 sudo lsof -i -P -n | grep LISTEN
@@ -45,9 +49,11 @@ Parameters
     -P: Show port numbers instead of service names
     -n: Show numerical addresses instead of resolving to names
 
-## 4. nmap
+## 4. `nmap`
 
 nmap (Network Mapper) is an open-source tool for network exploration and security auditing. It can be used to check which ports are open on a specific host.
+
+### Comando
 
 To check open ports locally:
 ```sh
